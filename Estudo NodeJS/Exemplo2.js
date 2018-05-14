@@ -1,12 +1,31 @@
-
 Aqui nós temos o uso de duas bibliotecas, a http e a fs (file system). Este método é muito parecido com o exemplo anterior,
 porém neste caso nós chamamos um arquivo.html(aqui trata-se do index.html) criado externamente para exibir como página da web.
 Este arquivo está no diretório Arquivos e a palavra reservada "__dirname" retorna o caminho onde se encontra o diretório.
 Temos ainda um controle caso o arquivo index não seja encontrado, retornando a menssagem "Arquivo index.html não encontrado...";
 para testar, basta mudar o nome de index.html para qualquer outro nome, como index2222.html, por exemplo.
 
+
+Index.html:
+
 ```
-//inicio do método
+
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aulas de nodejs</title>
+</head>
+<body>
+		<h1>Página Principal</h1>
+</body>
+</html>
+
+```
+
+Método do Node.js:
+
+```
+//início do método
 
 var http = require('http'); // biblioteca http
 var arquivo = require('fs'); //biblioteca file system
